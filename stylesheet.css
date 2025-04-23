@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(199, 203, 218);
+}
+nav{
+    padding : 1rem;
+    background-color: rgb(190, 22, 34);
+    filter: drop-shadow(0px 2px 2px gray);
+}
+.navLinks{
+    margin: 2px;
+    padding: 2px;
+}
+.navLinks a{
+    background-color: rgb(83, 183, 232);
+    margin: 2px;
+    padding: 2px;
+    color: black;
+    text-decoration: none;
+}
+.navTitle{
+    padding: .2rem;
+    margin: .2rem;
+}
+.Content{
+    padding: 0 1% 1% 1%;
+    margin: 0 10% 10% 10%;
+    filter: drop-shadow(0px 5px 2px gray);
+    background-color: white;
+}
+.videoEmbed{
+    margin : 0 1rem 1rem 1rem;
+    padding : 1rem;
+}
+.videoIframe{
+    margin : 1rem;
+    padding : 1rem;
+}
+.videoEmbed video{
+    width : 50%;
+}
+.videoIframe iframe{
+    width : 50%;
+    height : 20rem;
+    border : 0;
+}
