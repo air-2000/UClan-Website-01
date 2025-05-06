@@ -5,23 +5,34 @@ body{
     background-color: rgb(199, 203, 218);
 }
 nav{
-    padding : 1rem;
+    padding: 1px 0 1px 0;
     background-color: rgb(190, 22, 34);
     filter: drop-shadow(0px 2px 2px gray);
 }
 .navLinks{
-    margin: 2px;
     padding: 2px;
+    background-color: rgb(146, 16, 24);
 }
+.navLinks ul {
+    list-style-type: none;
+    margin: 2px;
+    padding: 2px 10% 2px 10%;
+    overflow: hidden;
+  }
+  .navLinks li{
+    float: left;
+  }
 .navLinks a{
-    background-color: rgb(83, 183, 232);
     margin: 2px;
     padding: 2px;
     color: black;
     text-decoration: none;
 }
+.navLinks a:hover{
+    background-color: rgb(52, 112, 143);
+}
 .navTitle{
-    padding: .2rem;
+    padding: 2px 10% 2px 10%;
     margin: .2rem;
 }
 .Content{
