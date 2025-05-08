@@ -1,5 +1,5 @@
 function productLoop(){
-    var hoodies = [['UCLan Hoodie (1)','Purple','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (1).jpg'],
+    var mainArr = [[['UCLan Hoodie (1)','Purple','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (1).jpg'],
     ['UCLan Hoodie (2)','Light Blue','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (2).jpg'],
     ['UCLan Hoodie (3)','Green','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (3).jpg'],
     ['UCLan Hoodie (4)','Dark Grey','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (4).jpg'],
@@ -32,9 +32,8 @@ function productLoop(){
     ['UCLan Hoodie (31)','Bright Pink','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (31).jpg'],
     ['UCLan Hoodie (32)','Burgundy New','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (32).jpg'],
     ['UCLan Hoodie (33)','Navy New','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (33).jpg'],
-    ['UCLan Hoodie (34)','Bright Green','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (34).jpg']];
-    
-    var jumpers =[['UCLan Logo Jumper','Purple','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £29.99','images/jumpers/jumper (1).jpg'],
+    ['UCLan Hoodie (34)','Bright Green','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (34).jpg']],
+    [['UCLan Logo Jumper','Purple','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £29.99','images/jumpers/jumper (1).jpg'],
     ['UCLan Logo Jumper','Rusty Red','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £29.99','images/jumpers/jumper (2).jpg'],
     ['UCLan Logo Jumper','Water Blue','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £29.99','images/jumpers/jumper (3).jpg'],
     ['UCLan Logo Jumper','White','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £29.99','images/jumpers/jumper (4).jpg'],
@@ -73,9 +72,8 @@ function productLoop(){
     ['UCLan Logo Jumper','Ocean Blue','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £29.99','images/jumpers/jumper (37).jpg'],
     ['UCLan Logo Jumper','Creame','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £29.99','images/jumpers/jumper (38).jpg'],
     ['UCLan Logo Jumper','Lighter Blue','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £29.99','images/jumpers/jumper (39).jpg'],
-    ['UCLan Logo Jumper','Light Grey','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £29.99','images/jumpers/jumper (40).jpg']];
-    
-    var tshirts = [['UCLan Logo Tshirt','Navy Blue New','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (1).jpg'],
+    ['UCLan Logo Jumper','Light Grey','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £29.99','images/jumpers/jumper (40).jpg']],
+    [['UCLan Logo Tshirt','Navy Blue New','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (1).jpg'],
     ['UCLan Logo Tshirt','Rusty Red New','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (2).jpg'],
     ['UCLan Logo Tshirt','Burgundy','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (3).jpg'],
     ['UCLan Logo Tshirt','Pink','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (4).jpg'],
@@ -109,39 +107,28 @@ function productLoop(){
     ['UCLan Logo Tshirt','Brilliant Blue','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (32).jpg'],
     ['UCLan Logo Tshirt','Creame','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (33).jpg'],
     ['UCLan Logo Tshirt','Teal Blue','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (34).jpg'],
-    ['UCLan Logo Tshirt','White','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (35).jpg']];
+    ['UCLan Logo Tshirt','White','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (35).jpg']]];
     
-    for (let index = 0; index < hoodies.length; index++) {
-        const element = hoodies[index];
+    for(let i = 0; i <mainArr.length; i++)
+        {   
+            temp = mainArr[i];
+            for (let index = 0; index < temp.length; index++) 
+            {
+                const listItem = temp[index];
 
-        var arrName = element[0];
-        var arrColor = element[1];
-        var arrDesc = element[2];
-        var arrPrice = element[3];
-        var arrPic = element[4];
-        console.log(arrName, arrColor, arrDesc, arrPrice, arrPic);
-        
-    }
-    for (let index = 0; index < jumpers.length; index++) {
-        const element = jumpers[index];
-
-        var arrName = element[0];
-        var arrColor = element[1];
-        var arrDesc = element[2];
-        var arrPrice = element[3];
-        var arrPic = element[4];
-        console.log(arrName, arrColor, arrDesc, arrPrice, arrPic);
-        
-    }
-    for (let index = 0; index < tshirts.length; index++) {
-        const element = tshirts[index];
-
-        var arrName = element[0];
-        var arrColor = element[1];
-        var arrDesc = element[2];
-        var arrPrice = element[3];
-        var arrPic = element[4];
-        console.log(arrName, arrColor, arrDesc, arrPrice, arrPic);
-        
-    }
+                var arrName = listItem[0];
+                var arrColor = listItem[1];
+                var arrDesc = listItem[2];
+                var arrPrice = listItem[3];
+                var arrPic = listItem[4];
+                console.log(typeof(arrName));
+                document.getElementById("Main").innerHTML += 
+                "<p class = 'arrName'>" + arrName + "</p>" + 
+                "<p class = 'arrColor'>" + arrColor + "</p>" +
+                "<p class = 'arrDesc'>" + arrDesc + "</p>" +
+                "<p class = 'arrPrice'>" + arrPrice + "</p>" +
+                "<img class = 'arrPic' src='" + arrPic + "'>";
+            }
+        }
+    
 }
