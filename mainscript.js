@@ -121,7 +121,7 @@ function productLoop(){
                 var arrDesc = listItem[2];
                 var arrPrice = listItem[3];
                 var arrPic = listItem[4];
-                console.log(typeof(arrName));
+                //console.log(typeof(arrName));
                 document.getElementById("Main").innerHTML += "<div class = 'product'>"+
                 "<p class = 'arrName'>" + arrName + "</p>" + 
                 "<p class = 'arrColor'>" + arrColor + "</p>" +
@@ -132,3 +132,4 @@ function productLoop(){
         }
     
 }
+document.onload = productLoop();
