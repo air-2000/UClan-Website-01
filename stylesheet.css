@@ -57,3 +57,8 @@ nav{
     height : 20rem;
     border : 0;
 }
+
+img.arrPic{
+    width: 100px;
+    height: 100px;
+}
