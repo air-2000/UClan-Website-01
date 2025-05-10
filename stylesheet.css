@@ -13,6 +13,16 @@ nav{
     background-color: rgb(190, 22, 34);
     filter: drop-shadow(0px 2px 2px gray);
 }
+
+.navTitle img{
+    width: 250px;
+    height: 84px;
+}
+
+.navTitle h1{
+    float: right;
+}
+
 .navLinks{
     padding: 2px;
     background-color: rgb(146, 16, 24);
