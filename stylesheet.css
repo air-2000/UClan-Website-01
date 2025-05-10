@@ -161,8 +161,10 @@ img.carrPic{
 .itemPic{
     width: 500px;
     height: 500px;
+    align-items: left;
 }
 
 .Desc{
-    float:right;
+    align-items: right;
+    text-align: right;
 }
