@@ -22,18 +22,22 @@ footer{
     display:flex;
     align-items: center;
     align-content: center;
+    text-align: justify;
     margin: 0 6px 0 6px;
     padding: 0 2px 2px 2px;
 }
 .FootyLinks{
+    vertical-align: top;
     margin: 6px;
     padding: 2px;
 }
 .FootyContacts{
+    vertical-align: top;
     margin: 6px;
     padding: 2px;
 }
 .FootyLocation{
+    vertical-align: top;
     margin: 6px;
     padding: 2px;
 }
