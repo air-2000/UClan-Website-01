@@ -1,5 +1,4 @@
-function productLoop(){
-    var mainArr = [[['UCLan Hoodie (1)','Purple','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (1).jpg'],
+var mainArr = [[['UCLan Hoodie (1)','Purple','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (1).jpg'],
     ['UCLan Hoodie (2)','Light Blue','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (2).jpg'],
     ['UCLan Hoodie (3)','Green','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (3).jpg'],
     ['UCLan Hoodie (4)','Dark Grey','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £39.99','images/hoodies/hoodie (4).jpg'],
@@ -108,7 +107,9 @@ function productLoop(){
     ['UCLan Logo Tshirt','Creame','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (33).jpg'],
     ['UCLan Logo Tshirt','Teal Blue','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (34).jpg'],
     ['UCLan Logo Tshirt','White','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £19.99','images/tshirt/tshirt (35).jpg']]];
-    
+
+function productLoop()
+{    
     for(let i = 0; i <mainArr.length; i++)
         {   
             temp = mainArr[i];
@@ -122,14 +123,28 @@ function productLoop(){
                 var arrPrice = listItem[3];
                 var arrPic = listItem[4];
                 //console.log(typeof(arrName));
-                document.getElementById("Main").innerHTML += "<div class = 'product'>"+
+                document.getElementById("Main").innerHTML += "<div class = 'product' id =" + index + ">"+
+                "<a href = javascript:void(0)><div class = card>"+
                 "<p class = 'arrName'>" + arrName + "</p>" + 
                 "<p class = 'arrColor'>" + arrColor + "</p>" +
                 "<p class = 'arrDesc'>" + arrDesc + "</p>" +
                 "<p class = 'arrPrice'>" + arrPrice + "</p>" +
-                "<img class = 'arrPic' src='" + arrPic + "'></div>";
+                "<img class = 'arrPic' src='" + arrPic + "'>" +
+                "<button class = 'arrButton' id =" + index + 
+                " onclick='AddtoCart(" + i + "," + index +")'>Add to Cart</button></div></a></div>";
             }
         }
     
 }
+
+function AddtoCart(arrId, elemId)
+{
+    var temp = mainArr[arrId][elemId];
+    var lname = mainArr[arrId][elemId][0];
+
+    localStorage.setItem(lname, JSON.stringify(temp));
+
+    alert("Added "+temp[0]);
+}
+
 document.onload = productLoop();
