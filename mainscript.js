@@ -129,9 +129,9 @@ function productLoop()
                 "<p class = 'arrColor'>" + arrColor + "</p>" +
                 "<p class = 'arrDesc'>" + arrDesc + "</p>" +
                 "<p class = 'arrPrice'>" + arrPrice + "</p>" +
-                "<img class = 'arrPic' src='" + arrPic + "'>" +
+                "<img class = 'arrPic' src='" + arrPic + "'></a>" +
                 "<button class = 'arrButton' id =" + index + 
-                " onclick='AddtoCart(" + i + "," + index +")'>Add to Cart</button></div></a></div>";
+                " onclick='AddtoCart(" + i + "," + index +")'>Add to Cart</button></div></div>";
             }
         }
     
