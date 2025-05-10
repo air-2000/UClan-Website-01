@@ -124,7 +124,7 @@ function productLoop()
                 var arrPic = listItem[4];
                 //console.log(typeof(arrName));
                 document.getElementById("Main").innerHTML += "<div class = 'product' id =" + index + ">"+
-                "<a href = javascript:void(0)><div class = card>"+
+                "<a href = javascript:ItemPage("+ i + "," + index + ")><div class = card>"+
                 "<p class = 'arrName'>" + arrName + "</p>" + 
                 "<p class = 'arrColor'>" + arrColor + "</p>" +
                 "<p class = 'arrDesc'>" + arrDesc + "</p>" +
@@ -135,6 +135,13 @@ function productLoop()
             }
         }
     
+}
+
+function ItemPage(arrId, elemId){
+    temp = mainArr[arrId][elemId];
+    console.log(temp);
+    sessionStorage.setItem("clicked", temp);
+    open("item.html");
 }
 
 function AddtoCart(arrId, elemId)

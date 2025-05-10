@@ -145,3 +145,24 @@ img.carrPic{
     width: 100px;
     height: 100px;
 }
+
+#CartItems{
+    margin: 2px;
+    padding: 2px;
+}
+
+.CartItem{
+    margin: 2px;
+    padding: 5px;
+}
+
+/* Items */
+
+.itemPic{
+    width: 500px;
+    height: 500px;
+}
+
+.Desc{
+    float:right;
+}
