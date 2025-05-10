@@ -139,8 +139,10 @@ function productLoop()
 
 function ItemPage(arrId, elemId){
     temp = mainArr[arrId][elemId];
+    t2 = [arrId, elemId];
     console.log(temp);
     sessionStorage.setItem("clicked", temp);
+    sessionStorage.setItem("itemid", t2);
     open("item.html");
 }
 

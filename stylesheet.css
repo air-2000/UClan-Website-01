@@ -6,6 +6,38 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(199, 203, 218);
 }
+.Content{
+    padding: 1% 1% 1% 1%;
+    margin: 0 10% 0 10%;
+    background-color: white;
+}
+
+footer{
+    background-color: rgb(190, 22, 34);
+    margin: 0;
+    padding: 0 10% 0 10%;
+}
+
+.Footy{
+    display:flex;
+    align-items: center;
+    align-content: center;
+    margin: 0 6px 0 6px;
+    padding: 0 2px 2px 2px;
+}
+.FootyLinks{
+    margin: 6px;
+    padding: 2px;
+}
+.FootyContacts{
+    margin: 6px;
+    padding: 2px;
+}
+.FootyLocation{
+    margin: 6px;
+    padding: 2px;
+}
+
 /* Navigation menu */
 
 nav{
@@ -54,12 +86,6 @@ nav{
 }
 /* Home Page */
 
-.Content{
-    padding: 1% 1% 1% 1%;
-    margin: 0 10% 10% 10%;
-    filter: drop-shadow(0px 5px 2px gray);
-    background-color: white;
-}
 .videoEmbed{
     margin : 0 1rem 1rem 1rem;
     padding : 1rem;
@@ -69,13 +95,31 @@ nav{
     padding : 1rem;
 }
 .videoEmbed video{
-    width : 50%;
+    width : 100%;
 }
 .videoIframe iframe{
     width : 50%;
     height : 20rem;
     border : 0;
 }
+
+h1.homepageTitle{
+    color: rgb(0, 153, 210);
+    text-align: center;
+}
+
+.text{
+    align-content: right;
+}
+
+.firstrow{
+    display: flex;
+}
+
+p.homepage{
+    text-align: justify;
+}
+
 /* products decoration */
 
 .product a{
@@ -158,6 +202,10 @@ img.carrPic{
 
 /* Items */
 
+.ItemProduct{
+    display: flex;
+}
+
 .itemPic{
     width: 500px;
     height: 500px;
@@ -166,5 +214,8 @@ img.carrPic{
 
 .Desc{
     align-items: right;
-    text-align: right;
+    text-align: left;
+}
+.DescPic{
+    max-height: 600px;
 }
