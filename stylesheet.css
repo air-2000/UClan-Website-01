@@ -1,10 +1,13 @@
-/* Home Page and general design */
+/* general design */
+
 body{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(199, 203, 218);
 }
+/* Navigation menu */
+
 nav{
     padding: 1px 0 1px 0;
     background-color: rgb(190, 22, 34);
@@ -22,20 +25,25 @@ nav{
   }
   .navLinks li{
     float: left;
+    border-right:  1px solid #bbb;
   }
 .navLinks a{
     margin: 2px;
     padding: 2px;
+    display: block;
     color: black;
+    text-align: center;
     text-decoration: none;
 }
-.navLinks a:hover{
+.navLinks li:hover{
     background-color: rgb(52, 112, 143);
 }
 .navTitle{
     padding: 2px 10% 2px 10%;
     margin: .2rem;
 }
+/* Home Page */
+
 .Content{
     padding: 1% 1% 1% 1%;
     margin: 0 10% 10% 10%;
@@ -59,6 +67,7 @@ nav{
     border : 0;
 }
 /* products decoration */
+
 .product a{
     text-decoration: none;
     color: black;
@@ -67,7 +76,22 @@ nav{
 #Main{
     display: grid;
     row-gap: 1rem;
-    grid-template-columns: auto auto auto auto auto;
+}
+
+@media (min-width: 600px) {
+  #Main { grid-template-columns: repeat(1, 1fr); }
+}
+
+@media (min-width: 900px) {
+  #Main { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  #Main { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1400px) {
+  #Main { grid-template-columns: repeat(4, 1fr); }
 }
 
 .product{
@@ -103,4 +127,11 @@ img.arrPic{
 
 .product button:active{
     background-color: rgb(0, 0, 0);
+}
+
+/* Cart Items */
+
+img.carrPic{
+    width: 100px;
+    height: 100px;
 }

@@ -142,7 +142,7 @@ function AddtoCart(arrId, elemId)
     var temp = mainArr[arrId][elemId];
     var lname = mainArr[arrId][elemId][0];
 
-    localStorage.setItem(lname, JSON.stringify(temp));
+    localStorage.setItem(lname, temp);
 
     alert("Added "+temp[0]);
 }
